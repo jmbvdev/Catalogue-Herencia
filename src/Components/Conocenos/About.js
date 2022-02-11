@@ -1,9 +1,10 @@
 import React from 'react';
+import Inicio from '../Inicio/Inicio';
 
 const About = () => {
     return (
         <div>
-            <h1>Acerca de</h1>
+            <Inicio/>
         </div>
     );
 };

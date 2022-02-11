@@ -1,9 +1,10 @@
 import React from 'react';
+import Inicio from '../Inicio/Inicio';
 
 const Mujer = () => {
     return (
         <div>
-            <h1>Mujer</h1>
+            <Inicio/>
         </div>
     );
 };
