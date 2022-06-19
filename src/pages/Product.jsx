@@ -4,16 +4,14 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import NewsLetter from "../components/NewsLetter";
-
-
-
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  
+  ${mobile({ padding: "10px", flexDirection:"column" })}
 `;
 
 const ImgContainer = styled.div`
@@ -24,13 +22,13 @@ const Image = styled.img`
   width: 100%;
   height: 90vh;
   object-fit: cover;
-
+  ${mobile({ height: "40vh" })}
 `;
 
 const InfoContainer = styled.div`
   flex: 1;
   padding: 0px 50px;
-
+  ${mobile({ padding: "10px" })}
 `;
 
 const Title = styled.h1`
@@ -51,7 +49,7 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
-  
+  ${mobile({ width: "100%" })}
 `;
 
 const Filter = styled.div`
@@ -85,7 +83,7 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  ${mobile({ width: "100%" })}
 `;
 
 const AmountContainer = styled.div`
@@ -108,7 +106,7 @@ const Amount = styled.span`
 const Button = styled.button`
   padding: 15px;
   border: 2px solid teal;
-  background-color: #fff;
+  background-color: white;
   cursor: pointer;
   font-weight: 500;
 

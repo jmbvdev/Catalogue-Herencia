@@ -1,6 +1,6 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
 import  styled  from 'styled-components';
-// "../images/products/"
+
 
 const Info= styled.div`
 opacity: 0;
